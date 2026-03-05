@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn the story behind Cafe Regina — Portland's beloved community coffee house, founded in 2010 by Maria and James Harlow." />
+  <title>About Us | Cafe Regina</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="navbar scrolled" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Cafe Regina — Home">
+        <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="48" height="48" rx="10" fill="#6B3F1F"/>
+          <path d="M14 22h20l-2.5 14H16.5L14 22Z" stroke="#E8D5B0" stroke-width="2" fill="none"/>
+          <path d="M34 26h3a3 3 0 0 1 0 6h-3" stroke="#C8860A" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 18c0-3 3-3 3-6" stroke="#E8D5B0" stroke-width="2" stroke-linecap="round"/>
+          <path d="M26 18c0-3 3-3 3-6" stroke="#E8D5B0" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="logo-text">
+          Cafe Regina
+          <span>Est. 2010 · Portland, OR</span>
+        </div>
+      </a>
+
+      <ul id="nav-links" class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu.html" class="btn btn-gold" style="padding:.55rem 1.3rem;font-size:.88rem;">Order Now</a></li>
+      </ul>
+
+      <button id="hamburger" class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero" aria-label="About page header">
+      <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=1600&q=80')" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-content">
+          <h1>Our Story</h1>
+          <p class="breadcrumb"><a href="index.html">Home</a> <span>›</span> About</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOUNDING STORY ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-images reveal">
+            <div class="about-img-main">
+              <img src="https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?w=700&q=80"
+                   alt="Maria and James Harlow, founders of Cafe Regina, behind the espresso bar"
+                   loading="lazy" />
+            </div>
+            <div class="about-img-badge" aria-label="Founded 2010">
+              <span class="badge-num">2010</span>
+              <span class="badge-text">Portland's<br>Own</span>
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <span class="section-label">How It All Started</span>
+            <h2 class="section-title">Two Baristas, One Dream</h2>
+            <p>
+              Maria and James Harlow met at a barista competition in Seattle in 2008. Both fiercely passionate about specialty coffee and even more passionate about the people who drink it, they knew they wanted to build something together.
+            </p>
+            <p>
+              In 2010, they signed a lease on a 900-square-foot space on SE Hawthorne Blvd — Portland's vibrant, eclectic heart — and opened Cafe Regina with $40,000 in savings, 12 secondhand chairs, and an unshakeable belief that a great cup of coffee can make someone's day a little better.
+            </p>
+            <p>
+              Fifteen years later, that same belief is the foundation of everything we do. We've expanded the space, grown the team, and added food to our menu — but the soul of Cafe Regina is exactly what it was on day one: <em>people first, coffee always.</em>
+            </p>
+            <a href="contact.html" class="btn btn-primary" style="margin-top:1rem;">Visit Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== VALUES ========== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">What Drives Us</span>
+          <h2 class="section-title">Our Values</h2>
+          <p class="section-subtitle">Every decision we make — from sourcing beans to hiring team members — runs through these core commitments.</p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card reveal">
+            <div class="icon">🌱</div>
+            <h4>Sustainable Sourcing</h4>
+            <p>We buy directly from small-farm cooperatives in Colombia, Ethiopia, and Guatemala, paying above fair-trade prices and visiting annually.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="icon">🤝</div>
+            <h4>Community Roots</h4>
+            <p>10% of our net profit goes to local nonprofits serving food security and youth education in Portland each year.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="icon">♻️</div>
+            <h4>Zero-Waste Ambition</h4>
+            <p>Compostable packaging, on-site composting, and a bring-your-own-cup discount of $0.25. We're on a journey to zero waste by 2027.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="icon">🎓</div>
+            <h4>Continuous Learning</h4>
+            <p>Every team member receives SCA barista training and we host free monthly coffee education workshops open to the public.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="icon">🌈</div>
+            <h4>Inclusive Space</h4>
+            <p>Cafe Regina is a safe, welcoming space for everyone. We actively foster diversity, equity, and inclusion in our team and community.</p>
+          </div>
+          <div class="value-card reveal">
+            <div class="icon">❤️</div>
+            <h4>Genuine Hospitality</h4>
+            <p>We remember your name, your order, and your story. That's not a policy — it's just who we are.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TEAM ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">The People Behind the Bar</span>
+          <h2 class="section-title">Meet Our Team</h2>
+          <p class="section-subtitle">Every member of the Regina family brings passion, craft, and warmth to your daily cup.</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card reveal">
+            <div class="team-card-img">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80" alt="Maria Harlow — Co-Founder &amp; Head Roaster" loading="lazy" />
+            </div>
+            <h4>Maria Harlow</h4>
+            <p class="role">Co-Founder &amp; Head Roaster</p>
+            <p>SCA-certified roaster with a passion for Ethiopian naturals. Spends her weekends at the farmers market.</p>
+          </div>
+
+          <div class="team-card reveal">
+            <div class="team-card-img">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80" alt="James Harlow — Co-Founder &amp; Head of Operations" loading="lazy" />
+            </div>
+            <h4>James Harlow</h4>
+            <p class="role">Co-Founder &amp; Operations</p>
+            <p>Former competitive barista, now keeps the trains running on time — while still pulling a mean espresso.</p>
+          </div>
+
+          <div class="team-card reveal">
+            <div class="team-card-img">
+              <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&q=80" alt="Priya Nair — Lead Barista" loading="lazy" />
+            </div>
+            <h4>Priya Nair</h4>
+            <p class="role">Lead Barista</p>
+            <p>Latte art champion 2023. Invented our beloved Brown Butter Caramel Latte.</p>
+          </div>
+
+          <div class="team-card reveal">
+            <div class="team-card-img">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80" alt="Carlos Reyes — Head Baker" loading="lazy" />
+            </div>
+            <h4>Carlos Reyes</h4>
+            <p class="role">Head Baker</p>
+            <p>Trained in Mexico City, perfected his croissants in Paris. His almond croissant is the stuff of legend.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== AWARDS / PRESS ========== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">Recognition</span>
+          <h2 class="section-title">Awards &amp; Press</h2>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;margin-top:2.5rem;">
+          <div class="value-card reveal" style="border-top-color:var(--color-primary);">
+            <div class="icon">🏆</div>
+            <h4>Best Coffee Shop in Portland</h4>
+            <p><em>Willamette Week Readers' Poll</em> — 2023, 2024</p>
+          </div>
+          <div class="value-card reveal" style="border-top-color:var(--color-primary);">
+            <div class="icon">📰</div>
+            <h4>"The Perfect Third Place"</h4>
+            <p><em>Portland Monthly Magazine</em> — Spring 2024 feature story</p>
+          </div>
+          <div class="value-card reveal" style="border-top-color:var(--color-primary);">
+            <div class="icon">⭐</div>
+            <h4>4.9 Stars · 2,400+ Reviews</h4>
+            <p>Consistently top-rated on Google &amp; Yelp in the Pacific Northwest</p>
+          </div>
+          <div class="value-card reveal" style="border-top-color:var(--color-primary);">
+            <div class="icon">🎙️</div>
+            <h4>Featured on "Daily Grind" Podcast</h4>
+            <p>Episode 142 — James &amp; Maria on building a community café in the modern era</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="specials-banner" style="background:var(--color-primary);">
+      <div class="container reveal">
+        <span class="section-label" style="color:var(--color-accent);">Come Say Hi</span>
+        <h2 style="font-size:clamp(1.6rem,3.5vw,2.4rem);margin-bottom:.5rem;">We'd Love to Meet You</h2>
+        <p style="opacity:.85;margin-bottom:2rem;">Pop in any day of the week. The espresso is always on.</p>
+        <a href="contact.html" class="btn" style="background:#fff;color:var(--color-primary);font-weight:700;">Find Us &amp; Get Directions</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">Cafe Regina<span>Est. 2010 · Portland, OR</span></div>
+          <p>A neighborhood coffee house where great coffee, good food, and genuine connection come together every day.</p>
+          <nav class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li style="font-size:.88rem;color:rgba(255,255,255,.75);margin-bottom:.4rem;">Mon–Fri: 6 AM – 9 PM</li>
+            <li style="font-size:.88rem;color:rgba(255,255,255,.75);margin-bottom:.4rem;">Saturday: 7 AM – 10 PM</li>
+            <li style="font-size:.88rem;color:rgba(255,255,255,.75);">Sunday: 8 AM – 8 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Stay in the Loop</h4>
+          <p style="font-size:.88rem;margin-bottom:1rem;">Get seasonal specials &amp; new menu items.</p>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <label for="newsletter-email-about" class="sr-only">Email address</label>
+            <input type="email" id="newsletter-email-about" name="email" placeholder="your@email.com" required autocomplete="email" />
+            <button type="submit" class="btn btn-gold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Cafe Regina. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>

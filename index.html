@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cafe Regina — A cozy American coffee house in Portland, Oregon. Fresh roasts, homemade pastries, and warm hospitality since 2010." />
+  <title>Cafe Regina | Portland's Favorite Coffee House</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Favicon (inline SVG coffee cup) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="navbar navbar--transparent" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Cafe Regina — Home">
+        <!-- SVG logo mark: stylised coffee cup -->
+        <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="48" height="48" rx="10" fill="#6B3F1F"/>
+          <path d="M14 22h20l-2.5 14H16.5L14 22Z" stroke="#E8D5B0" stroke-width="2" fill="none"/>
+          <path d="M34 26h3a3 3 0 0 1 0 6h-3" stroke="#C8860A" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 18c0-3 3-3 3-6" stroke="#E8D5B0" stroke-width="2" stroke-linecap="round"/>
+          <path d="M26 18c0-3 3-3 3-6" stroke="#E8D5B0" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="logo-text">
+          Cafe Regina
+          <span>Est. 2010 · Portland, OR</span>
+        </div>
+      </a>
+
+      <ul id="nav-links" class="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu.html" class="btn btn-gold" style="padding:.55rem 1.3rem;font-size:.88rem;">Order Now</a></li>
+      </ul>
+
+      <button id="hamburger" class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-label="Welcome to Cafe Regina">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-eyebrow">☕ Portland's Favorite Coffee House</span>
+          <h1 class="hero-title">
+            Every Sip Tells<br>
+            <em>a Story</em>
+          </h1>
+          <p class="hero-desc">
+            Handcrafted espresso drinks, freshly baked pastries, and a warm corner
+            to call your own. Come as a stranger, leave as family.
+          </p>
+          <div class="hero-cta">
+            <a href="menu.html" class="btn btn-primary">Explore Our Menu</a>
+            <a href="about.html" class="btn btn-secondary" style="border-color:#fff;color:#fff;">Our Story</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ========== FEATURES STRIP ========== -->
+    <section class="features-strip" aria-label="Key features">
+      <div class="container">
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8Z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/>
+          </svg>
+          <strong>Single-Origin Roasts</strong>
+          <span>Ethically sourced beans</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Z"/><path d="M12 6v6l4 2"/>
+          </svg>
+          <strong>Open 7 Days</strong>
+          <span>Mon–Fri 6 AM – 9 PM</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+          </svg>
+          <strong>Free Wi-Fi</strong>
+          <span>Work from your happy place</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          <strong>Cozy Space</strong>
+          <span>Indoor &amp; outdoor seating</span>
+        </div>
+        <div class="feature-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          <strong>Community First</strong>
+          <span>Locally owned &amp; loved</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SNIPPET ========== -->
+    <section class="section" id="about-snippet">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-images reveal">
+            <div class="about-img-main">
+              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700&q=80" alt="Interior of Cafe Regina — warm wooden tables and espresso bar" loading="lazy" />
+            </div>
+            <div class="about-img-badge" aria-label="Established 15+ years ago">
+              <span class="badge-num">15+</span>
+              <span class="badge-text">Years of<br>Crafting Joy</span>
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <span class="section-label">Our Story</span>
+            <h2 class="section-title">More Than Coffee — It's a Community</h2>
+            <p class="section-subtitle">
+              Cafe Regina was born from a simple dream: a place where every person who walks through the door feels instantly at home.
+            </p>
+            <p>
+              Founded in 2010 by barista duo Maria &amp; James Harlow in the heart of Portland, Oregon, we've grown from a tiny corner shop to a beloved neighborhood institution — but our soul hasn't changed one bit.
+            </p>
+            <p>
+              We partner with small farms in Colombia, Ethiopia, and Guatemala to bring you beans with a story. Every roast, every latte, every croissant is made with care and intention.
+            </p>
+            <div class="about-stats">
+              <div class="stat">
+                <span class="stat-num">15+</span>
+                <span class="stat-label">Years Open</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">50K+</span>
+                <span class="stat-label">Happy Guests</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">12</span>
+                <span class="stat-label">Team Members</span>
+              </div>
+            </div>
+            <a href="about.html" class="btn btn-primary">Meet the Team</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MENU PREVIEW ========== -->
+    <section class="section section--alt" id="menu-preview">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">What We Serve</span>
+          <h2 class="section-title">Fan Favorites</h2>
+          <p class="section-subtitle">From our signature cold brew to flaky morning pastries — there's something for every craving.</p>
+        </div>
+
+        <div class="menu-grid">
+          <!-- Card 1 -->
+          <article class="menu-card reveal">
+            <img class="menu-card-img"
+              src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500&q=80"
+              alt="Regina Signature Latte"
+              loading="lazy" />
+            <div class="menu-card-body">
+              <p class="menu-card-category">Espresso</p>
+              <h3 class="menu-card-name">Regina Signature Latte</h3>
+              <p class="menu-card-desc">Double shot espresso, steamed oat milk, house-made brown butter caramel.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$6.50</span>
+                <a href="menu.html" class="btn btn-secondary" style="padding:.4rem 1rem;font-size:.82rem;">See More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="menu-card reveal">
+            <img class="menu-card-img"
+              src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500&q=80"
+              alt="Nitro Cold Brew"
+              loading="lazy" />
+            <div class="menu-card-body">
+              <p class="menu-card-category">Cold Brew</p>
+              <h3 class="menu-card-name">Nitro Cold Brew</h3>
+              <p class="menu-card-desc">Slow-steeped 20-hour cold brew charged with nitrogen. Silky smooth, no sugar needed.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$5.75</span>
+                <a href="menu.html" class="btn btn-secondary" style="padding:.4rem 1rem;font-size:.82rem;">See More</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="menu-card reveal">
+            <img class="menu-card-img"
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&q=80"
+              alt="Almond Croissant"
+              loading="lazy" />
+            <div class="menu-card-body">
+              <p class="menu-card-category">Bakery</p>
+              <h3 class="menu-card-name">Almond Croissant</h3>
+              <p class="menu-card-desc">Buttery laminated pastry filled with almond frangipane, dusted with powdered sugar.</p>
+              <div class="menu-card-footer">
+                <span class="menu-card-price">$4.25</span>
+                <a href="menu.html" class="btn btn-secondary" style="padding:.4rem 1rem;font-size:.82rem;">See More</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-view-all reveal">
+          <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SPECIALS BANNER ========== -->
+    <section class="specials-banner reveal">
+      <div class="container">
+        <span class="section-label" style="color:#fff9e6;">Daily Specials</span>
+        <h2>Happy Hour: 2 – 4 PM Daily</h2>
+        <p>Enjoy 20% off all espresso drinks and a complimentary mini pastry with every order over $8.</p>
+        <a href="menu.html" class="btn btn-primary" style="background:#fff;color:var(--color-secondary);">See Today's Menu</a>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS ========== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">What People Say</span>
+          <h2 class="section-title">Our Guests Love Us</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Honestly the best coffee I've ever had outside of Italy. The vibe is unmatched — I work here every Tuesday and Wednesday!"</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="https://i.pravatar.cc/88?img=47" alt="Sarah M." loading="lazy" />
+              </div>
+              <div>
+                <p class="testimonial-name">Sarah M.</p>
+                <p class="testimonial-location">Portland, OR</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"Almond croissant + nitro cold brew = the perfect start to any morning. The staff remembers my name. That means everything."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="https://i.pravatar.cc/88?img=12" alt="David R." loading="lazy" />
+              </div>
+              <div>
+                <p class="testimonial-name">David R.</p>
+                <p class="testimonial-location">Beaverton, OR</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="testimonial-text">"We had our book club here last month and they were so accommodating. The seasonal pumpkin spice oat latte is INCREDIBLE."</p>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="https://i.pravatar.cc/88?img=32" alt="Linda K." loading="lazy" />
+              </div>
+              <div>
+                <p class="testimonial-name">Linda K.</p>
+                <p class="testimonial-location">Lake Oswego, OR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== HOURS & LOCATION ========== -->
+    <section class="hours-location" id="hours" aria-label="Hours and Location">
+      <div class="container">
+        <div>
+          <h3>Hours of Operation</h3>
+          <table class="hours-table" aria-label="Weekly hours">
+            <tbody>
+              <tr><td>Monday – Friday</td><td>6:00 AM – 9:00 PM</td></tr>
+              <tr><td>Saturday</td><td>7:00 AM – 10:00 PM</td></tr>
+              <tr><td>Sunday</td><td>8:00 AM – 8:00 PM</td></tr>
+              <tr><td>Holidays</td><td>Check our Instagram</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:1.5rem;font-size:.85rem;opacity:.7;">*Kitchen closes 30 minutes before closing time.</p>
+        </div>
+
+        <div>
+          <h3>Find Us</h3>
+          <p class="location-address">
+            1247 SE Hawthorne Blvd<br>
+            Portland, OR 97214<br>
+            United States
+          </p>
+          <p class="location-phone">📞 <a href="tel:+15035550142">(503) 555-0142</a></p>
+          <p class="location-email">✉️ <a href="mailto:hello@caferegina.com">hello@caferegina.com</a></p>
+          <a href="contact.html" class="btn btn-gold" style="margin-top:1.5rem;display:inline-block;">Get Directions</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="logo-text">
+            Cafe Regina
+            <span>Est. 2010 · Portland, OR</span>
+          </div>
+          <p>A neighborhood coffee house where great coffee, good food, and genuine connection come together every day.</p>
+          <nav class="footer-social" aria-label="Social media links">
+            <!-- Instagram -->
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <!-- Twitter/X -->
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+              </svg>
+            </a>
+            <!-- Yelp -->
+            <a href="#" aria-label="Yelp">
+              <svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+              </svg>
+            </a>
+          </nav>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html#events">Private Events</a></li>
+          </ul>
+        </div>
+
+        <!-- Menu highlights -->
+        <div class="footer-col">
+          <h4>Our Menu</h4>
+          <ul>
+            <li><a href="menu.html#espresso">Espresso Drinks</a></li>
+            <li><a href="menu.html#cold-brew">Cold Brew</a></li>
+            <li><a href="menu.html#tea">Teas &amp; More</a></li>
+            <li><a href="menu.html#pastries">Pastries &amp; Baked</a></li>
+            <li><a href="menu.html#food">Savory Bites</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col footer-newsletter">
+          <h4>Stay in the Loop</h4>
+          <p style="font-size:.88rem;margin-bottom:1rem;">Get seasonal specials, events, and early access to new menu items.</p>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input type="email" id="newsletter-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+            <button type="submit" class="btn btn-gold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Cafe Regina. All rights reserved.</p>
+        <p>
+          <a href="#">Privacy Policy</a> &nbsp;·&nbsp;
+          <a href="#">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

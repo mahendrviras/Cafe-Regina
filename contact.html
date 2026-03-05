@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Cafe Regina in Portland, Oregon. Find our address, hours, phone number, and send us a message. We'd love to hear from you!" />
+  <title>Contact &amp; Find Us | Cafe Regina</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="navbar scrolled" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Cafe Regina — Home">
+        <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="48" height="48" rx="10" fill="#6B3F1F"/>
+          <path d="M14 22h20l-2.5 14H16.5L14 22Z" stroke="#E8D5B0" stroke-width="2" fill="none"/>
+          <path d="M34 26h3a3 3 0 0 1 0 6h-3" stroke="#C8860A" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 18c0-3 3-3 3-6" stroke="#E8D5B0" stroke-width="2" stroke-linecap="round"/>
+          <path d="M26 18c0-3 3-3 3-6" stroke="#E8D5B0" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="logo-text">
+          Cafe Regina
+          <span>Est. 2010 · Portland, OR</span>
+        </div>
+      </a>
+
+      <ul id="nav-links" class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="menu.html" class="btn btn-gold" style="padding:.55rem 1.3rem;font-size:.88rem;">Order Now</a></li>
+      </ul>
+
+      <button id="hamburger" class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero" aria-label="Contact page header">
+      <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80')" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-content">
+          <h1>Contact &amp; Find Us</h1>
+          <p class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Contact</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT MAIN ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:0;">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title">We'd Love to Hear From You</h2>
+          <p class="section-subtitle">Questions, feedback, private event inquiries — drop us a line and we'll get back to you within one business day.</p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Form -->
+          <div class="reveal">
+            <div class="contact-form">
+              <h3 style="margin-bottom:1.5rem;font-size:1.3rem;">Send a Message</h3>
+              <form id="contact-form" novalidate aria-label="Contact form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="first-name">First Name *</label>
+                    <input type="text" id="first-name" name="first_name" placeholder="Jane" required autocomplete="given-name" />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last Name *</label>
+                    <input type="text" id="last-name" name="last_name" placeholder="Smith" required autocomplete="family-name" />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="jane@example.com" required autocomplete="email" />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="(503) 555-0000" autocomplete="tel" />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject *</label>
+                  <select id="subject" name="subject" required>
+                    <option value="" disabled selected>Select a topic…</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="events">Private Event / Buyout</option>
+                    <option value="catering">Catering Request</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="press">Press &amp; Media</option>
+                    <option value="employment">Employment</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea id="message" name="message" placeholder="Tell us how we can help…" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width:100%;text-align:center;">Send Message</button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info reveal">
+            <h3>Visit or Call Us</h3>
+
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <div>
+                <strong>Address</strong>
+                <p>1247 SE Hawthorne Blvd<br>Portland, OR 97214<br>United States</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.62 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.8a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+15035550142">(503) 555-0142</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:hello@caferegina.com">hello@caferegina.com</a>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+              </svg>
+              <div>
+                <strong>Hours</strong>
+                <p>
+                  Mon – Fri: 6:00 AM – 9:00 PM<br>
+                  Saturday: 7:00 AM – 10:00 PM<br>
+                  Sunday: 8:00 AM – 8:00 PM
+                </p>
+              </div>
+            </div>
+
+            <!-- Parking / Transit -->
+            <div style="background:var(--color-light);border-radius:var(--radius);padding:1.25rem;margin-top:1rem;">
+              <h4 style="font-size:0.95rem;margin-bottom:0.75rem;">Getting Here</h4>
+              <p style="font-size:.88rem;color:var(--color-muted);margin-bottom:.5rem;">
+                🚌 <strong>TriMet Bus:</strong> Lines 14 &amp; 10 stop half a block away at SE Hawthorne &amp; 12th.
+              </p>
+              <p style="font-size:.88rem;color:var(--color-muted);margin-bottom:.5rem;">
+                🚲 <strong>Bike parking</strong> is available right out front — we're on the Portland Bicycle Network.
+              </p>
+              <p style="font-size:.88rem;color:var(--color-muted);">
+                🅿️ <strong>Street parking</strong> available on SE Hawthorne and surrounding side streets.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="map-container reveal" aria-label="Map showing Cafe Regina location in Portland, OR">
+          <iframe
+            title="Cafe Regina on Google Maps"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.1!2d-122.6544!3d45.5121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495a09d4b2fe8e5%3A0xcfc2d71e3a9b1a2e!2sSE%20Hawthorne%20Blvd%2C%20Portland%2C%20OR!5e0!3m2!1sen!2sus!4v1614280000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRIVATE EVENTS ========== -->
+    <section class="section section--alt" id="events">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <span class="section-label">Host Your Next Gathering</span>
+            <h2 class="section-title">Private Events &amp; Buyouts</h2>
+            <p>
+              Looking for a warm, unique venue for your next event? Cafe Regina is available for full buyouts and partial reservations Sunday mornings and select weekday evenings.
+            </p>
+            <p>
+              We've hosted birthday breakfasts, team off-sites, baby showers, book launches, and small business workshops. Our team will work with you to craft a custom menu and experience.
+            </p>
+            <ul style="margin:1.25rem 0;color:var(--color-muted);font-size:.95rem;line-height:2;">
+              <li>✔ Capacity up to 60 guests</li>
+              <li>✔ Custom food &amp; beverage packages</li>
+              <li>✔ Projector &amp; AV available</li>
+              <li>✔ Dedicated event coordinator</li>
+            </ul>
+            <a href="#contact-form" class="btn btn-primary" onclick="document.getElementById('subject').value='events'">Inquire About Events</a>
+          </div>
+
+          <div class="about-images reveal">
+            <div class="about-img-main">
+              <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=700&q=80"
+                   alt="Private event setup at Cafe Regina with warm lighting and long tables"
+                   loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">Cafe Regina<span>Est. 2010 · Portland, OR</span></div>
+          <p>A neighborhood coffee house where great coffee, good food, and genuine connection come together every day.</p>
+          <nav class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li style="font-size:.88rem;color:rgba(255,255,255,.75);margin-bottom:.4rem;">Mon–Fri: 6 AM – 9 PM</li>
+            <li style="font-size:.88rem;color:rgba(255,255,255,.75);margin-bottom:.4rem;">Saturday: 7 AM – 10 PM</li>
+            <li style="font-size:.88rem;color:rgba(255,255,255,.75);">Sunday: 8 AM – 8 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Stay in the Loop</h4>
+          <p style="font-size:.88rem;margin-bottom:1rem;">Get seasonal specials &amp; new menu items.</p>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <label for="newsletter-email-contact" class="sr-only">Email address</label>
+            <input type="email" id="newsletter-email-contact" name="email" placeholder="your@email.com" required autocomplete="email" />
+            <button type="submit" class="btn btn-gold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Cafe Regina. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
