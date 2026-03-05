@@ -1,0 +1,176 @@
+{
+  "categories": [
+    {
+      "id": "breakfast",
+      "name": "Breakfast",
+      "description": "Start your morning the Regina way",
+      "items": [
+        {
+          "id": "avocado-toast",
+          "name": "Avocado Toast",
+          "description": "Sourdough bread topped with smashed avocado, cherry tomatoes, microgreens, and a poached egg.",
+          "price": 12.5,
+          "image": "/images/menu/avocado-toast.jpg",
+          "tags": ["vegetarian", "popular"]
+        },
+        {
+          "id": "french-toast",
+          "name": "Brioche French Toast",
+          "description": "Thick-cut brioche dipped in vanilla custard, served with fresh berries and maple syrup.",
+          "price": 14.0,
+          "image": "/images/menu/french-toast.jpg",
+          "tags": ["sweet"]
+        },
+        {
+          "id": "eggs-benedict",
+          "name": "Eggs Benedict",
+          "description": "Poached eggs on English muffins with Canadian bacon and hollandaise sauce.",
+          "price": 15.0,
+          "image": "/images/menu/eggs-benedict.jpg",
+          "tags": ["popular"]
+        },
+        {
+          "id": "granola-bowl",
+          "name": "Granola Bowl",
+          "description": "House-made granola with Greek yogurt, seasonal fruits, honey, and chia seeds.",
+          "price": 10.0,
+          "image": "/images/menu/granola-bowl.jpg",
+          "tags": ["healthy", "vegetarian"]
+        }
+      ]
+    },
+    {
+      "id": "coffee",
+      "name": "Coffee",
+      "description": "Carefully sourced, expertly brewed",
+      "items": [
+        {
+          "id": "espresso",
+          "name": "Espresso",
+          "description": "A rich, bold single shot of our signature house blend.",
+          "price": 3.5,
+          "image": "/images/menu/espresso.jpg",
+          "tags": ["classic"]
+        },
+        {
+          "id": "cappuccino",
+          "name": "Cappuccino",
+          "description": "Espresso with steamed milk and a thick layer of velvety foam.",
+          "price": 5.0,
+          "image": "/images/menu/cappuccino.jpg",
+          "tags": ["classic", "popular"]
+        },
+        {
+          "id": "flat-white",
+          "name": "Flat White",
+          "description": "Double ristretto with silky microfoam milk for a smooth, creamy coffee.",
+          "price": 5.5,
+          "image": "/images/menu/flat-white.jpg",
+          "tags": ["popular"]
+        },
+        {
+          "id": "pour-over",
+          "name": "Single Origin Pour Over",
+          "description": "Hand-poured coffee featuring rotating single-origin beans from around the world.",
+          "price": 6.0,
+          "image": "/images/menu/pour-over.jpg",
+          "tags": ["specialty"]
+        },
+        {
+          "id": "cold-brew",
+          "name": "Cold Brew",
+          "description": "Slow-steeped for 18 hours for a smooth, naturally sweet cold coffee.",
+          "price": 5.5,
+          "image": "/images/menu/cold-brew.jpg",
+          "tags": ["cold", "popular"]
+        },
+        {
+          "id": "regina-latte",
+          "name": "Regina Latte",
+          "description": "Our signature latte with house-made vanilla and caramel, topped with latte art.",
+          "price": 6.5,
+          "image": "/images/menu/regina-latte.jpg",
+          "tags": ["signature", "popular"]
+        }
+      ]
+    },
+    {
+      "id": "pastries",
+      "name": "Pastries",
+      "description": "Freshly baked, always warm",
+      "items": [
+        {
+          "id": "butter-croissant",
+          "name": "Butter Croissant",
+          "description": "Flaky, golden layers of buttery pastry baked to perfection.",
+          "price": 4.5,
+          "image": "/images/menu/butter-croissant.jpg",
+          "tags": ["classic", "popular"]
+        },
+        {
+          "id": "pain-au-chocolat",
+          "name": "Pain au Chocolat",
+          "description": "Classic French pastry filled with rich dark chocolate.",
+          "price": 5.0,
+          "image": "/images/menu/pain-au-chocolat.jpg",
+          "tags": ["sweet"]
+        },
+        {
+          "id": "almond-croissant",
+          "name": "Almond Croissant",
+          "description": "Twice-baked croissant filled with almond cream and topped with sliced almonds.",
+          "price": 5.5,
+          "image": "/images/menu/almond-croissant.jpg",
+          "tags": ["popular"]
+        },
+        {
+          "id": "cinnamon-roll",
+          "name": "Cinnamon Roll",
+          "description": "Soft, swirled pastry with cinnamon sugar and cream cheese frosting.",
+          "price": 5.0,
+          "image": "/images/menu/cinnamon-roll.jpg",
+          "tags": ["sweet"]
+        }
+      ]
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "description": "Beyond coffee — refreshing sips",
+      "items": [
+        {
+          "id": "matcha-latte",
+          "name": "Matcha Latte",
+          "description": "Ceremonial-grade matcha whisked with your choice of milk.",
+          "price": 6.0,
+          "image": "/images/menu/matcha-latte.jpg",
+          "tags": ["popular"]
+        },
+        {
+          "id": "chai-latte",
+          "name": "Chai Latte",
+          "description": "Spiced black tea with steamed milk, cinnamon, and cardamom.",
+          "price": 5.5,
+          "image": "/images/menu/chai-latte.jpg",
+          "tags": ["spiced"]
+        },
+        {
+          "id": "fresh-juice",
+          "name": "Fresh Pressed Juice",
+          "description": "Seasonal cold-pressed juice — ask about today's selection.",
+          "price": 7.0,
+          "image": "/images/menu/fresh-juice.jpg",
+          "tags": ["healthy"]
+        },
+        {
+          "id": "hot-chocolate",
+          "name": "Belgian Hot Chocolate",
+          "description": "Rich Belgian chocolate melted with steamed milk, topped with whipped cream.",
+          "price": 5.5,
+          "image": "/images/menu/hot-chocolate.jpg",
+          "tags": ["sweet", "popular"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "siteName": "Café Regina",
+  "tagline": "Where Every Cup Tells a Story",
+  "heroSubtitle": "Artisan coffee, freshly baked pastries, and a warm atmosphere in the heart of the city.",
+  "about": {
+    "title": "Our Story",
+    "intro": "Born from a passion for exceptional coffee and a love of community.",
+    "story": [
+      "Café Regina was founded in 2018 by two friends who shared a dream: to create a space where great coffee meets genuine hospitality. What started as a small corner café has grown into a beloved neighborhood destination.",
+      "Our name, 'Regina,' means 'queen' — a tribute to the art of coffee-making and our commitment to treating every guest like royalty. We believe that a perfect cup of coffee can transform an ordinary moment into something extraordinary.",
+      "Every bean we use is ethically sourced from small-batch farms around the world. Our roasters work closely with farmers in Colombia, Ethiopia, Guatemala, and beyond to ensure the highest quality and fairest practices."
+    ],
+    "philosophy": {
+      "title": "Our Philosophy",
+      "text": "We believe in the power of simplicity. Great ingredients, careful preparation, and genuine warmth — that's all it takes to create something truly special. At Café Regina, we don't rush. We take time to craft every drink, plate every dish with care, and make every guest feel at home.",
+      "values": [
+        {
+          "title": "Quality First",
+          "description": "We never compromise on ingredients. From single-origin beans to locally sourced produce, quality is our foundation."
+        },
+        {
+          "title": "Community",
+          "description": "We're more than a café — we're a gathering place. We host local artists, support neighborhood events, and foster genuine connections."
+        },
+        {
+          "title": "Sustainability",
+          "description": "From compostable packaging to energy-efficient equipment, we're committed to reducing our environmental footprint."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "address": "127 Queen Street West, Toronto, ON M5H 2M9",
+    "phone": "+1 (416) 555-0192",
+    "email": "hello@caferegina.com",
+    "instagram": "https://instagram.com/caferegina",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.269198208989!2d-79.38318492392778!3d43.65107097110148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d9b8e5c9e7%3A0x1c2b4e38b9e6e5f0!2sQueen%20St%20W%2C%20Toronto%2C%20ON!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca",
+    "hours": [
+      { "days": "Monday — Friday", "time": "7:00 AM — 8:00 PM" },
+      { "days": "Saturday", "time": "8:00 AM — 9:00 PM" },
+      { "days": "Sunday", "time": "8:00 AM — 6:00 PM" }
+    ]
+  },
+  "featuredItems": ["regina-latte", "avocado-toast", "butter-croissant", "matcha-latte"],
+  "instagramPosts": [
+    { "id": 1, "alt": "Latte art at Café Regina", "image": "/images/instagram/insta-1.jpg" },
+    { "id": 2, "alt": "Cozy corner seating", "image": "/images/instagram/insta-2.jpg" },
+    { "id": 3, "alt": "Fresh pastries display", "image": "/images/instagram/insta-3.jpg" },
+    { "id": 4, "alt": "Morning light through windows", "image": "/images/instagram/insta-4.jpg" },
+    { "id": 5, "alt": "Cold brew flight", "image": "/images/instagram/insta-5.jpg" },
+    { "id": 6, "alt": "Avocado toast plating", "image": "/images/instagram/insta-6.jpg" }
+  ]
+}
