@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Inter", sans-serif;
+  --color-cream: #FAF7F2;
+  --color-coffee-brown: #3C2A1E;
+  --color-warm-beige: #D4B896;
+  --color-soft-black: #1A1A1A;
+  --color-latte: #E8DDD3;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-cream);
+    color: var(--color-coffee-brown);
+  }
+
+  .dark body {
+    background-color: var(--color-soft-black);
+    color: var(--color-cream);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-warm-beige);
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--color-soft-black);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--color-coffee-brown);
+}
+
+.img-placeholder {
+  background: linear-gradient(135deg, var(--color-latte) 0%, var(--color-warm-beige) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dark .img-placeholder {
+  background: linear-gradient(135deg, #2a2420 0%, #3C2A1E 100%);
+}

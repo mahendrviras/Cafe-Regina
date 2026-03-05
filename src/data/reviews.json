@@ -1,0 +1,46 @@
+{
+  "reviews": [
+    {
+      "id": 1,
+      "name": "Sophie Laurent",
+      "rating": 5,
+      "text": "Café Regina has become my second home. The atmosphere is unmatched — warm, cozy, and always welcoming. Their Regina Latte is absolutely divine.",
+      "date": "2025-11-15"
+    },
+    {
+      "id": 2,
+      "name": "Marcus Chen",
+      "rating": 5,
+      "text": "Best pour-over in the city, hands down. You can tell they care about every detail, from the beans to the cup. Exceptional quality.",
+      "date": "2025-10-22"
+    },
+    {
+      "id": 3,
+      "name": "Elena Petrova",
+      "rating": 4,
+      "text": "The pastries here are incredible — the almond croissant is a must-try! Beautiful interior design too. A perfect brunch spot.",
+      "date": "2025-12-03"
+    },
+    {
+      "id": 4,
+      "name": "James Whitfield",
+      "rating": 5,
+      "text": "I come here every morning before work. The staff remembers my order, the coffee is consistently perfect, and the ambiance is serene.",
+      "date": "2025-09-18"
+    },
+    {
+      "id": 5,
+      "name": "Amara Osei",
+      "rating": 5,
+      "text": "From the aesthetics to the taste — everything about Café Regina screams quality. Their avocado toast is the best I've ever had.",
+      "date": "2026-01-07"
+    },
+    {
+      "id": 6,
+      "name": "David Kim",
+      "rating": 4,
+      "text": "A hidden gem! The cold brew is smooth and refreshing. The minimalist decor creates such a peaceful environment for working or catching up with friends.",
+      "date": "2026-02-14"
+    }
+  ]
+}
