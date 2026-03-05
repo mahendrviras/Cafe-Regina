@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse the full Cafe Regina menu — espresso drinks, cold brew, teas, fresh pastries, sandwiches and more. Portland, OR." />
+  <title>Menu | Cafe Regina</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="navbar scrolled" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Cafe Regina — Home">
+        <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="48" height="48" rx="10" fill="#6B3F1F"/>
+          <path d="M14 22h20l-2.5 14H16.5L14 22Z" stroke="#E8D5B0" stroke-width="2" fill="none"/>
+          <path d="M34 26h3a3 3 0 0 1 0 6h-3" stroke="#C8860A" stroke-width="2" stroke-linecap="round"/>
+          <path d="M20 18c0-3 3-3 3-6" stroke="#E8D5B0" stroke-width="2" stroke-linecap="round"/>
+          <path d="M26 18c0-3 3-3 3-6" stroke="#E8D5B0" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="logo-text">
+          Cafe Regina
+          <span>Est. 2010 · Portland, OR</span>
+        </div>
+      </a>
+
+      <ul id="nav-links" class="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="menu.html" class="btn btn-gold" style="padding:.55rem 1.3rem;font-size:.88rem;">Order Now</a></li>
+      </ul>
+
+      <button id="hamburger" class="nav-hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+
+  <main>
+
+    <!-- ========== PAGE HERO ========== -->
+    <section class="page-hero" aria-label="Menu header">
+      <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1600&q=80')" aria-hidden="true"></div>
+      <div class="container">
+        <div class="page-hero-content">
+          <h1>Our Menu</h1>
+          <p class="breadcrumb"><a href="index.html">Home</a> <span>›</span> Menu</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MENU BODY ========== -->
+    <section class="section">
+      <div class="container">
+        <div class="text-center reveal" style="margin-bottom:0;">
+          <span class="section-label">Crafted With Love</span>
+          <h2 class="section-title">What's Brewing</h2>
+          <p class="section-subtitle">All drinks available hot, iced, or blended. Dairy-free milk options include oat, almond, and soy at no extra charge.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="menu-filter" role="tablist" aria-label="Filter menu by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="espresso" role="tab" aria-selected="false">Espresso</button>
+          <button class="filter-btn" data-filter="cold-brew" role="tab" aria-selected="false">Cold Brew</button>
+          <button class="filter-btn" data-filter="tea" role="tab" aria-selected="false">Tea &amp; More</button>
+          <button class="filter-btn" data-filter="pastries" role="tab" aria-selected="false">Pastries</button>
+          <button class="filter-btn" data-filter="food" role="tab" aria-selected="false">Savory Bites</button>
+          <button class="filter-btn" data-filter="seasonal" role="tab" aria-selected="false">Seasonal</button>
+        </div>
+
+        <!-- ── Espresso ── -->
+        <div id="espresso" class="menu-category reveal" data-category="espresso">
+          <h3 class="menu-section-title">☕ Espresso Bar</h3>
+          <div class="menu-items-list">
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Espresso <span class="menu-item-tag">Vegan</span></h4>
+                <p>Single or double shot of our house blend — rich, bold, and perfectly balanced.</p>
+              </div>
+              <div class="menu-item-price">$3.00 / $3.50</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Americano</h4>
+                <p>Espresso diluted with hot water for a clean, bright cup reminiscent of drip coffee.</p>
+              </div>
+              <div class="menu-item-price">$4.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Cappuccino</h4>
+                <p>Equal parts espresso, steamed milk, and velvety microfoam. Classic and comforting.</p>
+              </div>
+              <div class="menu-item-price">$5.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Latte</h4>
+                <p>Double espresso with silky steamed milk. Choose from vanilla, caramel, hazelnut, or lavender syrups.</p>
+              </div>
+              <div class="menu-item-price">$5.75</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Regina Signature Latte <span class="menu-item-tag">Best Seller</span></h4>
+                <p>Double espresso, steamed oat milk, house-made brown butter caramel, sea salt flake.</p>
+              </div>
+              <div class="menu-item-price">$6.50</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Flat White</h4>
+                <p>Ristretto shots with a thin layer of microfoam. Intense, smooth, and small but mighty.</p>
+              </div>
+              <div class="menu-item-price">$5.25</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Cortado</h4>
+                <p>Espresso cut with equal parts warm milk to reduce acidity. A Spanish classic.</p>
+              </div>
+              <div class="menu-item-price">$4.75</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Mocha</h4>
+                <p>Espresso, steamed milk, and our house-made dark chocolate sauce. Topped with whipped cream.</p>
+              </div>
+              <div class="menu-item-price">$6.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Macchiato</h4>
+                <p>Espresso "stained" with a dollop of foam. Short and bold.</p>
+              </div>
+              <div class="menu-item-price">$4.25</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Cold Brew ── -->
+        <div id="cold-brew" class="menu-category reveal" data-category="cold-brew">
+          <h3 class="menu-section-title">🧊 Cold Brew &amp; Iced</h3>
+          <div class="menu-items-list">
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Classic Cold Brew <span class="menu-item-tag">Vegan</span></h4>
+                <p>20-hour slow-steeped Colombian cold brew. Smooth, low-acid, naturally sweet.</p>
+              </div>
+              <div class="menu-item-price">$5.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Nitro Cold Brew <span class="menu-item-tag">Best Seller</span></h4>
+                <p>Cold brew on nitrogen tap. Cascading bubbles, creamy texture, no added sugar needed.</p>
+              </div>
+              <div class="menu-item-price">$5.75</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Cold Brew Float</h4>
+                <p>Nitro cold brew poured over a scoop of vanilla bean ice cream. A grown-up treat.</p>
+              </div>
+              <div class="menu-item-price">$7.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Iced Latte</h4>
+                <p>Espresso over ice with your choice of milk and optional flavored syrup.</p>
+              </div>
+              <div class="menu-item-price">$5.75</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Shaken Espresso</h4>
+                <p>Espresso and simple syrup shaken over ice, topped with oat milk. Light, frothy, refreshing.</p>
+              </div>
+              <div class="menu-item-price">$6.25</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Tea ── -->
+        <div id="tea" class="menu-category reveal" data-category="tea">
+          <h3 class="menu-section-title">🍵 Tea &amp; Non-Coffee</h3>
+          <div class="menu-items-list">
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Chai Latte <span class="menu-item-tag">Vegan Option</span></h4>
+                <p>House-made masala chai concentrate with your choice of steamed milk. Warm &amp; spiced.</p>
+              </div>
+              <div class="menu-item-price">$5.50</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Matcha Latte <span class="menu-item-tag">Vegan Option</span></h4>
+                <p>Ceremonial-grade Japanese matcha whisked with steamed oat milk and a touch of honey.</p>
+              </div>
+              <div class="menu-item-price">$6.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Golden Milk Latte <span class="menu-item-tag">Vegan</span></h4>
+                <p>Turmeric, ginger, cinnamon, black pepper, and oat milk. Anti-inflammatory &amp; delicious.</p>
+              </div>
+              <div class="menu-item-price">$5.75</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Loose-Leaf Tea</h4>
+                <p>Rotating selection of black, green, white, and herbal teas. Ask your barista for today's options.</p>
+              </div>
+              <div class="menu-item-price">$3.75</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Hot Chocolate</h4>
+                <p>Single-origin dark chocolate melted into steamed milk. Rich, comforting, not too sweet.</p>
+              </div>
+              <div class="menu-item-price">$5.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Fresh Lemonade <span class="menu-item-tag">Vegan</span></h4>
+                <p>Freshly squeezed with house-made simple syrup. Ask for lavender or mint variation.</p>
+              </div>
+              <div class="menu-item-price">$4.25</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Pastries ── -->
+        <div id="pastries" class="menu-category reveal" data-category="pastries">
+          <h3 class="menu-section-title">🥐 Pastries &amp; Baked Goods</h3>
+          <p style="color:var(--color-muted);font-size:.9rem;margin-bottom:1.5rem;">Baked fresh in-house every morning. Ask about gluten-free options.</p>
+          <div class="menu-items-list">
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Almond Croissant <span class="menu-item-tag">Fan Fave</span></h4>
+                <p>Twice-baked croissant filled with almond frangipane, topped with sliced almonds &amp; powdered sugar.</p>
+              </div>
+              <div class="menu-item-price">$4.25</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Butter Croissant</h4>
+                <p>Classic French-style, laminated with European butter. Perfectly flaky.</p>
+              </div>
+              <div class="menu-item-price">$3.50</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Blueberry Scone</h4>
+                <p>Lemon-zested scone loaded with fresh blueberries and finished with vanilla glaze.</p>
+              </div>
+              <div class="menu-item-price">$3.75</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Banana Walnut Muffin</h4>
+                <p>Moist, naturally sweetened with ripe bananas and toasted walnuts.</p>
+              </div>
+              <div class="menu-item-price">$3.50</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Cardamom Morning Bun</h4>
+                <p>Swirled with orange zest, cardamom, and demerara sugar. Warm and caramelized.</p>
+              </div>
+              <div class="menu-item-price">$4.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Chocolate Babka Slice <span class="menu-item-tag">Vegan</span></h4>
+                <p>Rich swirled chocolate bread with dark chocolate filling. Sold by the generous slice.</p>
+              </div>
+              <div class="menu-item-price">$4.50</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Food ── -->
+        <div id="food" class="menu-category reveal" data-category="food">
+          <h3 class="menu-section-title">🥪 Savory Bites</h3>
+          <div class="menu-items-list">
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Egg &amp; Cheese Sandwich <span class="menu-item-tag">Best Seller</span></h4>
+                <p>Scrambled eggs, aged cheddar, and herb aioli on a toasted brioche bun.</p>
+              </div>
+              <div class="menu-item-price">$9.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Avocado Toast</h4>
+                <p>Smashed avocado on toasted sourdough with microgreens, cherry tomatoes, and everything bagel seasoning.</p>
+              </div>
+              <div class="menu-item-price">$10.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Turkey Pesto Panini</h4>
+                <p>Sliced turkey, sun-dried tomato pesto, provolone, roasted peppers — pressed to golden perfection.</p>
+              </div>
+              <div class="menu-item-price">$11.50</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Caprese Sandwich <span class="menu-item-tag">Vegetarian</span></h4>
+                <p>Fresh mozzarella, heirloom tomatoes, basil, and balsamic glaze on ciabatta.</p>
+              </div>
+              <div class="menu-item-price">$10.50</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Grain Bowl <span class="menu-item-tag">Vegan</span></h4>
+                <p>Farro, roasted seasonal vegetables, pickled onions, tahini dressing, &amp; hemp seeds.</p>
+              </div>
+              <div class="menu-item-price">$13.00</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Seasonal Soup (Cup/Bowl)</h4>
+                <p>Made fresh daily from local produce. Ask your barista what's on today.</p>
+              </div>
+              <div class="menu-item-price">$5.50 / $8.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Seasonal ── -->
+        <div id="seasonal" class="menu-category reveal" data-category="seasonal">
+          <h3 class="menu-section-title">🍂 Seasonal Specials</h3>
+          <p style="color:var(--color-muted);font-size:.9rem;margin-bottom:1.5rem;">Current season: <strong>Spring 2026</strong> — limited time, while supplies last.</p>
+          <div class="menu-items-list">
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Lavender Honey Latte <span class="menu-item-tag">Limited</span></h4>
+                <p>Espresso with house-made lavender syrup, local wildflower honey, and oat milk. Floral &amp; dreamy.</p>
+              </div>
+              <div class="menu-item-price">$6.75</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Strawberry Matcha <span class="menu-item-tag">Limited</span></h4>
+                <p>Ceremonial matcha layered over fresh strawberry purée and cold oat milk. Stunning &amp; refreshing.</p>
+              </div>
+              <div class="menu-item-price">$6.75</div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-info">
+                <h4>Lemon Poppy Seed Cake Slice <span class="menu-item-tag">Limited</span></h4>
+                <p>Bright, citrusy, with a tangy cream cheese glaze. Made with local Meyer lemons.</p>
+              </div>
+              <div class="menu-item-price">$5.00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Allergen note -->
+        <aside class="reveal" style="background:#fff;border-left:4px solid var(--color-secondary);padding:1.25rem 1.5rem;border-radius:0 var(--radius) var(--radius) 0;margin-top:3rem;font-size:.88rem;color:var(--color-muted);">
+          <strong style="color:var(--color-primary);">Allergen Notice:</strong> Our kitchen handles nuts, gluten, dairy, eggs, and soy. Please inform your barista of any allergies. Menu items and prices are subject to change. All prices include applicable taxes.
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER (shared) ========== -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">Cafe Regina<span>Est. 2010 · Portland, OR</span></div>
+          <p>A neighborhood coffee house where great coffee, good food, and genuine connection come together every day.</p>
+          <nav class="footer-social" aria-label="Social media links">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li style="font-size:.88rem;color:rgba(255,255,255,.75);margin-bottom:.4rem;">Mon–Fri: 6 AM – 9 PM</li>
+            <li style="font-size:.88rem;color:rgba(255,255,255,.75);margin-bottom:.4rem;">Saturday: 7 AM – 10 PM</li>
+            <li style="font-size:.88rem;color:rgba(255,255,255,.75);">Sunday: 8 AM – 8 PM</li>
+          </ul>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Stay in the Loop</h4>
+          <p style="font-size:.88rem;margin-bottom:1rem;">Get seasonal specials &amp; new menu items.</p>
+          <form class="newsletter-form" aria-label="Newsletter signup">
+            <label for="newsletter-email-menu" class="sr-only">Email address</label>
+            <input type="email" id="newsletter-email-menu" name="email" placeholder="your@email.com" required autocomplete="email" />
+            <button type="submit" class="btn btn-gold">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Cafe Regina. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> &nbsp;·&nbsp; <a href="#">Terms of Service</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js"></script>
+</body>
+</html>
